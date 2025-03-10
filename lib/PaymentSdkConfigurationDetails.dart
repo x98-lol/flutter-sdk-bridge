@@ -18,7 +18,7 @@ class PaymentSdkConfigurationDetails {
   String? profileId;
   String? serverKey;
   String? clientKey;
-  num? amount;
+  int? amount;
   String? merchantCountryCode;
   String? merchantName;
   String? transactionReference;
@@ -120,7 +120,7 @@ extension PaymentSdkConfigurationDetailsExtension
       pt_server_key: this.serverKey,
       pt_screen_title: this.screentTitle,
       pt_merchant_name: this.merchantName,
-      pt_amount: (this.amount != null && this.amount! % 1 == 0) ? this.amount!.toInt() : this.amount,
+      pt_amount: this.amount,
       pt_currency_code: this.currencyCode,
       pt_tokenise_type: this.tokeniseType?.name,
       pt_token_format: this.tokenFormat?.name,
