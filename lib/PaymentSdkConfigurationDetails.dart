@@ -18,7 +18,7 @@ class PaymentSdkConfigurationDetails {
   String? profileId;
   String? serverKey;
   String? clientKey;
-  double? amount;
+  num? amount;
   String? merchantCountryCode;
   String? merchantName;
   String? transactionReference;
